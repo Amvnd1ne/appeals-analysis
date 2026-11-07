@@ -1,0 +1,33 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+support.db
+.idea/
+.DS_Store
+
+# Чужие файлы прошлых проектов
+data/
+reports/
+A_pp.py
+app_old.py
+data.json.py
+*.ipynb
+olympiad_results.csv
+olympiad_data_dictionary.csv
+solution.py
+script*.py
+notebook*.md
+ф.py
+в.ipynb
+кейс Т2.ipynb
+кейс Т2.py
+проект_вк.ipynb
+проект_вк.ipynb.py
+uchi_parent_service
+:memory
+gamification_ab_test.py
+gamification_ab_test.ipynb
+k.ipynb
+database.db
+A/

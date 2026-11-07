@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Обращение #{{ appeal.id }}{% endblock %}
+
+{% block content %}
+<a href="/" class="btn btn-outline-secondary mb-3">← Назад к списку</a>
+
+<h1 class="mb-4">Обращение #{{ appeal.id }}</h1>
+
+<div class="card">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Дата</dt>
+            <dd class="col-sm-9">{{ appeal.created_at }}</dd>
+
+            <dt class="col-sm-3">Пользователь</dt>
+            <dd class="col-sm-9">{{ appeal.user_name }}</dd>
+
+            <dt class="col-sm-3">Категория</dt>
+            <dd class="col-sm-9"><span class="badge bg-secondary">{{ appeal.category }}</span></dd>
+
+            <dt class="col-sm-3">Статус</dt>
+            <dd class="col-sm-9">{{ appeal.status }}</dd>
+
+            <dt class="col-sm-3">Текст обращения</dt>
+            <dd class="col-sm-9">{{ appeal.text }}</dd>
+        </dl>
+    </div>
+</div>
+{% endblock %}
